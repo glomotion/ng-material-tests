@@ -159,25 +159,34 @@ function TabPaginationDirective($mdEffects, $window, $$rAF, $$q, $timeout) {
 
     // Called when page is changed by a user action (click)
     function userChangePage(increment) {
+      
       var newPage = state.page + increment;
       var newTab;
+      
       if (!tabsCtrl.selected() || getPageForTab(tabsCtrl.selected()) !== newPage) {
         var startIndex;
+      
         if (increment < 0) {
+      
           // If going backward, select the previous available tab, starting from
           // the first item on the page after newPage.
           startIndex = (newPage + 1) * state.itemsPerPage;
           newTab = tabsCtrl.previous( tabsCtrl.itemAt(startIndex) );
+      
         } else {
+      
           // If going forward, select the next available tab, starting with the
           // last item before newPage.
           startIndex = (newPage * state.itemsPerPage) - 1;
           newTab = tabsCtrl.next( tabsCtrl.itemAt(startIndex) );
+      
         }
       }
+      
       setPage(newPage).then(function() {
         newTab && newTab.element.focus();
       });
+      
       newTab && tabsCtrl.select(newTab);
     }
 
