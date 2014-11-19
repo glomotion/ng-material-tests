@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"tabs",
+				"tabsWidth"
+			],
+			[
 				"fail",
 				"startupFailure"
 			],
@@ -510,23 +514,40 @@
 			[
 				"comman",
 				"command-prompt-height"
-			],
-			[
-				"begin",
-				"begin-btn-dia"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "<!DOCTYPE html>\n<html ng-app=\"cards-app\" ng-controller=\"AppController\">\n<!--\n           COLLECT\n                          ,,\n                         ';;\n                          ''\n            ____          ||\n           ;    \\         ||\n            \\,---'-,-,    ||\n            /     (  o)   ||\n          (o )__,--'-' \\  ||\n,,,,       ;'uuuuu''   ) ;;\n\\   \\      \\ )      ) /\\//\n '--'       \\'nnnnn' /  \\\n   \\\\      //'------'    \\\n    \\\\    //  \\           \\\n     \\\\  //    )           )\n      \\\\//     |           |\n       \\\\     /            |\n\n\n      ALL THE (CARD) THINGS!\n-->\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Vegas Web Form</title>\n\n    <link href=\"//fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,400italic\" rel=\"stylesheet\" type=\"text/css\">\n    <link href=\"angular-material.min.css\" rel=\"stylesheet\">\n    <link href=\"app.css\" rel=\"stylesheet\">\n    \n    <script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js\"></script>\n    <script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-animate.js\"></script>\n    <script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-touch.js\"></script>\n    <script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-aria.min.js\"></script>\n    <script src=\"hammer.min.js\"></script>\n    <script src=\"angular-material.min.js\"></script>\n\n    <!-- \n\n        app's js \n        \n        <script src=\"/static/js/directives.js\"></script>\n        <script src=\"/static/js/services.js\"></script>\n        <script src=\"/static/js/controllers.js\"></script>\n\n    -->\n\n    <script>\n        angular.module('cards-app', ['ngTouch', 'ngAnimate', 'ngMaterial'])\n        .controller('AppController', function($scope, $timeout) { \n            \n            $scope.formData = {};\n            $scope.formData.consent = false;\n            $scope.flipped = false;\n\n            // TEMP code, mucho hackio\n                var loaded = false;\n                $timeout(function(){\n                    loaded = true;\n                },10);\n\n\n            var fullnameInput = document.getElementById(\"fullname\");\n            // update the input control when we update the scope object\n            $scope.formData.fullname = fullnameInput.value = \"Pulled from g+ api\";\n\n            $scope.$watchCollection('formData', function(){\n                updateData();\n            });\n\n            function updateData() {\n\n                $scope.formData.shortname = $scope.formData.fullname.split(' ')[0];\n                $scope.formData.ldap = $scope.formData.shortname.toLowerCase() + '@google.com';\n\n                if (!$scope.formData.consent) {\n                    $scope.cantSave = true;\n                } else {\n                    $scope.cantSave = false;\n                }\n            }\n\n            $scope.$watch('formData.fullname', function(){\n                toggleFlipped('reverse');\n            }, true);\n            $scope.$watch('formData.cardImage', function(){\n                toggleFlipped('reverse');\n            }, true);\n            $scope.$watch('formData.quote', function(){\n                toggleFlipped();\n            }, true);\n            $scope.$watch('formData.brag', function(){\n                toggleFlipped();\n            }, true);\n            $scope.$watch('formData.aboutGoogle', function(){\n                toggleFlipped();\n            }, true);\n            $scope.$watch('formData.thisIsMe', function(){\n                toggleFlipped();\n            }, true);\n\n            function toggleFlipped(reverse) {\n                if (reverse) {\n                    if ($scope.flipped) {\n                        $scope.flipped = false;\n                        console.log('flipping to frontside')\n                    }\n                } else {\n                    if(!$scope.flipped && loaded) {\n                        $scope.flipped = true;\n                        console.log('flipping to backside');\n                    }\n                }\n            }\n\n            \n\n        });\n    </script>\n\n    <!-- \n\n        NOTE:\n        To use Angular's template tags inside of AppEngine, the open and close tags are changed to:\n        {[{ object }]} \n\n    -->\n\n</head>\n\n<body class=\"\" ng-class=\"\">\n    \n   \n\n    \n\n    \n\n</body>\n</html>\n\n\n\n\n\n\n\n\n",
-			"file": "/Users/timpaul/Desktop/GIT-Repos/angular-materials-tests/tabs.html",
-			"file_size": 4431,
-			"file_write_time": 1415928209000000,
+			"file": "tabs.html",
 			"settings":
 			{
-				"buffer_size": 4431,
+				"buffer_size": 8291,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/app.scss",
+			"settings":
+			{
+				"buffer_size": 9463,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "angular-material/angular-material-edit.js",
+			"settings":
+			{
+				"buffer_size": 178674,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "angular-material/angular-material-tabs.js",
+			"settings":
+			{
+				"buffer_size": 26257,
 				"line_ending": "Unix"
 			}
 		}
@@ -583,6 +604,11 @@
 	},
 	"file_history":
 	[
+		"/Users/timpaul/Desktop/GIT-Repos/ng-material-tests/moo.html",
+		"/Users/timpaul/Desktop/GIT-Repos/ng-material-tests/angular-material/angular-material.css",
+		"/Users/timpaul/Desktop/GIT-Repos/ng-material-tests/angular-material/ng-tabs-edit.js",
+		"/Users/timpaul/Desktop/GIT-Repos/ng-material-tests/angular-material.min.css",
+		"/Users/timpaul/Desktop/GIT-Repos/angular-materials-tests/tabs.html",
 		"/Users/timpaul/Library/Application Support/Sublime Text 2/Packages/View In Browser/View In Browser.sublime-settings",
 		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/static/templates/cards.html",
 		"/Users/timpaul/Desktop/GIT-Repos/apac-mobile-first/static/js/hammer-carousel.2.0.js",
@@ -705,12 +731,7 @@
 		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/apps/mplayer.js",
 		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/app.js",
 		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_system_settings.html",
-		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_unlock.html",
-		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_editor.html",
-		"/Users/timpaul/Desktop/moo.html",
-		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/urls.py",
-		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/apps/appunlock.js",
-		"/Users/timpaul/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_unlock.html"
 	],
 	"find":
 	{
@@ -738,6 +759,63 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"prop",
+			"console",
+			"state.tabWidth",
+			"console",
+			"prop",
+			"mdTab'",
+			"mdTab",
+			"MdTab",
+			"mdTab",
+			"MdTab",
+			"mdTab",
+			"MdTab",
+			"mdTab",
+			"md-tabs",
+			"mdTabs",
+			"md-tabs-edit",
+			"mdTabs",
+			"mdta",
+			"tabs",
+			"$mdEffects",
+			"MdTabDirective",
+			"paginator",
+			"pagina",
+			"mdTabs",
+			"WIDTH",
+			"$$raF",
+			"(function() {\n\nangular.module('material.components.tabs')\n\n.directive('mdTabsPagination', [\n  '$mdEffects',\n  '$window',\n  '$$rAF',\n  '$$q',\n  '$timeout',\n  TabPaginationDirective\n]);\n\nfunction TabPaginationDirective($mdEffects, $window, $$rAF, $$q, $timeout) {\n\n  // TODO allow configuration of TAB_MIN_WIDTH\n  var TAB_MIN_WIDTH = 8 * 10; \n\n  // Must match tab min-width rule in _tabs.scss\n  // var PAGINATOR_RIGHT = 42;\n  // var PAGINATOR_LEFT = 62;\n\n  var PAGINATORS_WIDTH = 0;\n\n  return {\n    restrict: 'A',\n    require: '^mdTabs',\n    link: postLink\n  };\n\n  function postLink(scope, element, attr, tabsCtrl) {\n\n    var tabsParent = element.children();\n    var state = scope.pagination = {\n      page: -1,\n      active: false,\n      clickNext: function() { userChangePage(+1); },\n      clickPrevious: function() { userChangePage(-1); }\n    };\n\n    updatePagination();\n    var debouncedUpdatePagination = $$rAF.debounce(updatePagination);\n\n    scope.$on('$mdTabsChanged', debouncedUpdatePagination);\n    angular.element($window).on('resize', debouncedUpdatePagination);\n\n    // Listen to focus events bubbling up from md-tab elements\n    tabsParent.on('focusin', onTabs",
+			"TAB_MIN_WIDTH",
+			"PAGINATORS_WIDTH",
+			"PAGINATOR_RIGHT",
+			"PAGINATOR_LEFT",
+			"PAGINATORS_WIDTH",
+			"tabsCtrl",
+			"itemsPerPage",
+			"setPage(",
+			".\"}",
+			"\"",
+			"mdTabs",
+			"paginationToggled",
+			"tabsWidth",
+			"tabWidth",
+			"slideTabButtons",
+			"setPage(",
+			"62px",
+			"42px",
+			"PAGINATORS_WIDTH",
+			"mdTab",
+			"mdTabs",
+			"md-tabs",
+			"32",
+			"/bower_components/",
+			".tabsdemoStaticTabs ",
+			"300px",
+			"md-button",
+			"md-warn",
+			"  ",
+			"md-tabs",
 			"bs/angularjs/1.3",
 			"0-rc.2",
 			"thumb",
@@ -808,64 +886,7 @@
 			"notify-inf",
 			"notify-",
 			"puller-mode",
-			"$state",
-			"state",
-			"slideCallback",
-			"cards",
-			"console",
-			"cardMiss",
-			"\"OH SNAP!\" !important",
-			".notification.alert",
-			"uiService.alert",
-			".alert",
-			"BumpService.listen",
-			"$loop",
-			"puller-mo",
-			"puller",
-			".view-container",
-			"puller",
-			"$http",
-			"emit",
-			"BumpService",
-			".listen",
-			".tabs",
-			"#app-collections",
-			".drag-func",
-			"pullReset",
-			"$appl",
-			"UNOWNED_LEVEL",
-			"limited",
-			".drag-fun",
-			"article",
-			"300ms",
-			"this",
-			"history",
-			"drag-",
-			"drag-functionality-area",
-			"console",
-			"isBrowser",
-			"updateLevelMeta",
-			"updateLevelMeta(",
-			"userOwnedCards",
-			"detailMode",
-			"article {",
-			"view-con",
-			"LEFT",
-			"RIGHT",
-			"pageAnim",
-			".slide-left-right-ios7",
-			"ng-leave",
-			"isBr",
-			"bump",
-			"window.isBrowser()",
-			"flex",
-			"23",
-			"splash",
-			"app-header",
-			"300ms",
-			"500ms",
-			"350ms",
-			"$google-red"
+			"$state"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -874,7 +895,7 @@
 		"replace_history":
 		[
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -883,33 +904,116 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/timpaul/Desktop/GIT-Repos/angular-materials-tests/tabs.html",
+					"file": "tabs.html",
 					"settings":
 					{
-						"buffer_size": 4431,
+						"buffer_size": 8291,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2956,
-								2956
+								1232,
+								1162
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 664.0,
+						"translation.y": 112.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scss/app.scss",
+					"settings":
+					{
+						"buffer_size": 9463,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7104,
+								7104
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3836.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "angular-material/angular-material-edit.js",
+					"settings":
+					{
+						"buffer_size": 178674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175960,
+								175960
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 81990.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "angular-material/angular-material-tabs.js",
+					"settings":
+					{
+						"buffer_size": 26257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7558,
+								7558
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3589.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -973,6 +1077,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 207.0,
+	"side_bar_width": 215.0,
 	"status_bar_visible": true
 }
