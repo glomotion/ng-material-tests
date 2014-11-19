@@ -1,0 +1,444 @@
+
+/*==============================================================================================================
+
+	__________                            _________                        _________ __          _____  _____ 
+	\______   \____    ______ ____       /   _____/____    ______ ______  /   _____//  |_ __ ___/ ____\/ ____\
+	 |    |  _|__  \  /  ___// __ \      \_____  \\__  \  /  ___//  ___/  \_____  \\   __\  |  \   __\\   __\ 
+	 |    |   \/ __ \_\___ \\  ___/      /        \/ __ \_\___ \ \___ \   /        \|  | |  |  /|  |   |  |   
+	 |______  (____  /____  >\___  > /\ /_______  (____  /____  >____  > /_______  /|__| |____/ |__|   |__|   
+			\/     \/     \/     \/  )/         \/     \/     \/     \/          \/                           
+
+
+	Base sass styles: opinionated defaults
+
+
+=================================================================================================================
+
+
+ /*
+ * Import Sass add-ons
+ */
+
+@import "compass";
+@import "normalize";
+@import "animation";
+@import "keyframes";
+
+//@import "breakpoint";
+//@import "jqueryui";
+
+
+/* Adapted from:
+
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+
+==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+
+*, *::before, *::after {
+	@include box-sizing(border-box);
+}
+
+html, button, input, select, textarea {
+	color: black;
+}
+
+/* Open Sans Available weights:
+		
+	300 - light
+	300italic
+	400 - normal / regular
+	400italic
+	600 - medium
+	700 - bold
+	800 - black */
+
+body {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.6;
+	font-family: 'Roboto', sans-serif;
+
+	// Some nicer font aliasing (if possible)
+	-webkit-font-smoothing: antialiased; // Chrome/Safari font aliasing
+	-moz-osx-font-smoothing: grayscale; // Firefox font aliasing
+	
+	input, code, pre, textarea {
+		// font-family: 'Inconsolata', monospace;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale; // Firefox font aliasing
+	}
+}
+
+/*
+ * Basic styles to heading objects
+ */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	margin: 0;
+}
+
+/*
+ * Setup iconfont */
+ 
+@font-face {
+	font-family: 'apacons';
+	src:    url('../font/apacons.eot');
+	src:    url('../font/apacons.eot?#iefix') format('embedded-opentype'),
+			url('../font/apacons.woff') format('woff'),
+			url('../font/apacons.ttf') format('truetype'),
+			url('../font/apacons.svg#FontAwesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* The actual font declaration */
+.ff-icon, .ff-icon-after::after, .ff-icon-before::before {
+	font-family: 'apacons';
+	letter-spacing: 0;
+	font-size: 1em;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	
+	//cursor: default;
+
+	/* disallow text highlighting 
+	-webkit-touch-callout: none;
+
+	-webkit-user-select: none;
+			user-select: none; */
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   
+   Browse Happy prompt
+   
+   ==========================================================================
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+
+/* ==========================================================================================================                                                                                          
+	
+	
+	C A R D S
+
+
+	Base styles below:
+	
+	
+============================================================================================================= */
+
+/*
+ * Settings for compass vendor prefixing.
+ */
+
+$experimental-support-for-mozilla : false;
+$experimental-support-for-webkit : true;
+$support-for-original-webkit-gradients : true;
+$experimental-support-for-opera : false;
+$experimental-support-for-microsoft : false;
+$experimental-support-for-khtml : false;
+
+
+/*
+ * Define Global SASS variables.
+ */
+
+$light-off-black: #2f2f2f;
+$off-black: #262626;
+$off-white: #ebebeb;
+
+$google-green: #0F9D58;
+$google-red: #DB4437;
+$google-yellow: #ffc001;
+$google-blue: #4285F4;
+$mid-grey: #676767;
+
+$quantum-grey: #444;
+$quantum-teal: #009688;
+$quantum-fab-btn: #eeff41;
+$pink-fab-btn: #ff4081;
+$quantum-skyblue: #00b9d1;
+$quantum-indigo: #3f51b5;
+$quantum-amber: #ffc107;
+$quantum-lightgreen: #7cb342;
+$quantum-lime-highlight: #f4ee8e;
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ 
+
+::-moz-selection {
+	background: rgba(0,0,0,.25);
+	text-shadow: none;
+}
+*/
+
+::selection {
+	background: $google-yellow;
+	color: white;
+	text-shadow: none;
+}
+
+/*
+ * Setup SASS placeholders.
+ */
+
+%css-ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+
+/*
+ * Keyframe Animation declarations.
+ */
+
+
+// @include keyframes(toolbar-appear) {
+// 	0% { 
+// 		@include simple-transform( $rotate: -360deg ); 
+// 	}
+// 	100% { 
+// 		@include simple-transform( $rotate: 0deg ); 
+// 	}
+// }
+
+
+
+
+
+/*
+ * Style up scrollbar for webkit.
+ */
+
+::-webkit-scrollbar { 
+	
+}
+::-webkit-scrollbar-track {
+	
+}
+::-webkit-scrollbar-thumb { 
+   
+}
+
+$left-side-form: 350px;
+$padding: 35px;
+$save-btn-height: 65px;
+
+/*
+ * Base styles
+ */
+
+html, body {
+	height: 100%;
+}
+
+body {
+
+}
+
+.tabsdemoDynamicTabs {
+
+}
+
+.tabsdemoDynamicTabs .remove-tab {
+  margin-bottom: 40px; }
+.tabsdemoDynamicTabs .md-button {
+  display: block; }
+.tabsdemoDynamicTabs .demo-tab {
+  height: 300px;
+  text-align: center; }
+.tabsdemoDynamicTabs .tab-0 {
+  background-color: #E3F2FD; }
+.tabsdemoDynamicTabs .tab-1 {
+  background-color: #E1F5FE; }
+.tabsdemoDynamicTabs .tab-2 {
+  background-color: #E0F7FA; }
+.tabsdemoDynamicTabs .tab-3 {
+  background-color: #E0F2F1; }
+.tabsdemoDynamicTabs .tab-3 {
+  background-color: yellowgreen; }
+.tabsdemoDynamicTabs .title {
+  padding-top: 8px;
+  padding-right: 8px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #888;
+  margin-top: 24px; }
+.tabsdemoDynamicTabs [layout-align] > * {
+  margin-left: 8px; }
+.tabsdemoDynamicTabs form > [layout] > * {
+  margin-left: 8px; }
+.tabsdemoDynamicTabs .long > input {
+  width: 264px; }
+.tabsdemoDynamicTabs .md-button {
+  max-height: 30px; }
+.tabsdemoDynamicTabs .md-button.add-tab {
+  margin-top: 20px;
+  max-height: 30px !important; }
+
+.md-header-items-container .md-header-items {
+	@include transition-duration( .25s );
+	@include transition-timing-function( ease-in-out );
+}
+
+// these values are also set in the main angular-materials "TabPaginationDirective("
+$prev-paginate: 62px;
+$next-paginate: 42px;
+
+.md-paginator {
+	
+	margin: 0;
+
+	&.md-prev {
+		width: $prev-paginate;
+	}
+	&.md-next {
+		width: $next-paginate;	
+	}
+}
+.md-paginating .md-header-items-container, .md-header-items-container {
+	left: $prev-paginate;
+	right: $next-paginate;
+}
+
+md-tab {
+	min-width: 90px;
+}
+
+
+// some very specific custom color theming;
+md-tabs.md-indigo-theme md-tabs-ink-bar {
+	background: $pink-fab-btn;
+}
+md-tabs.md-indigo-theme md-tab .md-ripple-container {
+	color: $pink-fab-btn;
+}
+
+// .md-paginating .md-header-items-container, .md-header-items-container {
+// 	left: $prev-paginate;
+// 	right: $next-paginate;
+// }
+
+
+.tabsdemoStaticTabs {
+	
+	height: 100%;
+	
+	/*
+	* Animation styles
+	*/
+	#tab1-content {
+	  background-color: #3F51B5; }
+	#tab2-content {
+	  background-color: #673AB7; }
+	#tab3-content {
+	  background-color: #00796B; }
+	.tabpanel-container {
+	  display: block;
+	  position: relative;
+	  background: white;
+	  border: 0px solid black;
+	  height: 100%;
+	  overflow: hidden; }
+	[role="tabpanel"] {
+	  color: white;
+	  width: 100%;
+	  height: 100%;
+	  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+	  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+	  position: absolute; }
+	[role="tabpanel"].ng-leave.ng-leave-active, 
+	[role="tabpanel"].ng-enter {
+	  top: -100%; }
+	[role="tabpanel"].ng-leave, 
+	[role="tabpanel"].ng-enter.ng-enter-active {
+	  top: 0; }
+	[role="tabpanel"].ng-leave {
+	  z-index: 100; }
+	.tabpanel-container [role="tabpanel"] {
+	  padding: 20px; }
+	.after-tabs-area {
+	  padding: 25px; }
+	.after-tabs-area > span {
+	  margin-top: 25px;
+	  padding-right: 15px;
+	  vertical-align: middle;
+	  line-height: 30px;
+	  height: 35px; }
+	.after-tabs-area > md-checkbox {
+	  margin-top: 26px;
+	  margin-left: 0px; }
+}
+
+
+
+/* ==========================================================================
+   
+   Helper classes
+   
+   ========================================================================== */
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before, .clearfix::after {
+	
+	content: " ";   /* 1 */
+	display: table; /* 2 */
+
+}
+.clearfix::after {
+	clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+	*zoom: 1;
+}
+
+
+
+
+
+.hidden {
+	display: none;
+}

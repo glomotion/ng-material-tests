@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html ng-app="cards-app" ng-controller="AppController">
+<!--
+           COLLECT
+                          ,,
+                         ';;
+                          ''
+            ____          ||
+           ;    \         ||
+            \,---'-,-,    ||
+            /     (  o)   ||
+          (o )__,--'-' \  ||
+,,,,       ;'uuuuu''   ) ;;
+\   \      \ )      ) /\//
+ '--'       \'nnnnn' /  \
+   \\      //'------'    \
+    \\    //  \           \
+     \\  //    )           )
+      \\//     |           |
+       \\     /            |
+
+
+      ALL THE (CARD) THINGS!
+-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegas Web Form</title>
+
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,400italic" rel="stylesheet" type="text/css">
+    <link href="angular-material.min.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular-touch.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.3/angular-aria.min.js"></script>
+    <script src="hammer.min.js"></script>
+    <script src="angular-material.min.js"></script>
+
+    <!-- 
+
+        app's js 
+        
+        <script src="/static/js/directives.js"></script>
+        <script src="/static/js/services.js"></script>
+        <script src="/static/js/controllers.js"></script>
+
+    -->
+
+    <script>
+        angular.module('cards-app', ['ngTouch', 'ngAnimate', 'ngMaterial'])
+        .controller('AppController', function($scope, $timeout) { 
+            
+            $scope.formData = {};
+            $scope.formData.consent = false;
+            $scope.flipped = false;
+
+            // TEMP code, mucho hackio
+                var loaded = false;
+                $timeout(function(){
+                    loaded = true;
+                },10);
+
+
+            var fullnameInput = document.getElementById("fullname");
+            // update the input control when we update the scope object
+            $scope.formData.fullname = fullnameInput.value = "Pulled from g+ api";
+
+            $scope.$watchCollection('formData', function(){
+                updateData();
+            });
+
+            function updateData() {
+
+                $scope.formData.shortname = $scope.formData.fullname.split(' ')[0];
+                $scope.formData.ldap = $scope.formData.shortname.toLowerCase() + '@google.com';
+
+                if (!$scope.formData.consent) {
+                    $scope.cantSave = true;
+                } else {
+                    $scope.cantSave = false;
+                }
+            }
+
+            $scope.$watch('formData.fullname', function(){
+                toggleFlipped('reverse');
+            }, true);
+            $scope.$watch('formData.cardImage', function(){
+                toggleFlipped('reverse');
+            }, true);
+            $scope.$watch('formData.quote', function(){
+                toggleFlipped();
+            }, true);
+            $scope.$watch('formData.brag', function(){
+                toggleFlipped();
+            }, true);
+            $scope.$watch('formData.aboutGoogle', function(){
+                toggleFlipped();
+            }, true);
+            $scope.$watch('formData.thisIsMe', function(){
+                toggleFlipped();
+            }, true);
+
+            function toggleFlipped(reverse) {
+                if (reverse) {
+                    if ($scope.flipped) {
+                        $scope.flipped = false;
+                        console.log('flipping to frontside')
+                    }
+                } else {
+                    if(!$scope.flipped && loaded) {
+                        $scope.flipped = true;
+                        console.log('flipping to backside');
+                    }
+                }
+            }
+
+            
+
+        });
+    </script>
+
+    <!-- 
+
+        NOTE:
+        To use Angular's template tags inside of AppEngine, the open and close tags are changed to:
+        {[{ object }]} 
+
+    -->
+
+</head>
+
+<body class="" ng-class="">
+    
+    <material-toolbar class="material-theme-dark">
+        <h2 class="material-toolbar-tools">
+            <span><strong>Full House</strong> - make your playing card</span>
+        </h2>
+    </material-toolbar>
+    
+    <div class="cols">
+        <div class="col" id="left">
+            
+            <h1>Enter your details</h1>
+            <h2>(and watch your playing card preview update)</h2>
+
+            <material-input-group 
+                class="row material-input-group-theme-light-blue material-input-group-inverted">
+                
+                <label for="fullname">Your full name</label>
+                <material-input id="fullname" type="text" ng-model="formData.fullname">
+            
+            </material-input-group>
+
+            <material-input-group 
+                class="row material-input-group-theme-light-blue material-input-group-inverted">
+
+                <label for="quote">An inspiring quote...</label>
+                <material-input id="quote" type="text" ng-model="formData.quote">
+            
+            </material-input-group>
+
+            <material-input-group 
+                class="row material-input-group-theme-light-blue material-input-group-inverted">
+
+                <label for="brag">I don't like to brag but...</label>
+                <material-input id="brag" type="text" ng-model="formData.brag">
+            
+            </material-input-group>
+            
+            <material-input-group 
+                class="row material-input-group-theme-light-blue material-input-group-inverted">
+
+                <label for="about-google">Let me tell you about Google...</label>
+                <material-input id="about-google" type="text" ng-model="formData.aboutGoogle">
+            
+            </material-input-group>
+
+            <material-input-group 
+                class="row material-input-group-theme-light-blue material-input-group-inverted">
+
+                <label for="this-is-me">This is me in one link...</label>
+                <material-input id="this-is-me" type="text" ng-model="formData.thisIsMe">
+            
+            </material-input-group>
+
+            <div class="row file-input">
+                <label for="card-image">Upload a card face image</label>
+                <input id="card-image" type="file" ng-model="formData.cardImage">
+            </div>
+            
+            <div class="row agreement">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu lorem facilisis, rhoncus quam non, pharetra purus. In sed turpis vitae ante dignissim sodales in malesuada dolor. Etiam sapien odio, sollicitudin sit amet lacinia vitae, fringilla eu libero.</p>
+                <material-checkbox ng-model="formData.consent" aria-label="Checkbox 1">I concent</material-checkbox>    
+            </div>        
+            
+            <a class="save" 
+                ng-class="{ disabled : cantSave }">
+                Make card
+            </a>
+
+        </div>
+
+        <div class="col" id="right">
+
+            <h1>Live card preview</h1>
+                
+            <div id="card-preview" ng-class="{ flipped : flipped }">
+                <a class="flip-btn" ng-click="flipped = !flipped"></a>
+                <div class="face front">
+                    
+                    <h2 class="gplus">View {{formData.shortname}} on Google+</h2>
+                    <h1 class="fullname">{{formData.fullname}}</h1>
+                    <h3 class="ldap">{{formData.ldap}}</h3>
+
+                </div>
+                <div class="face back">
+                    
+                    <h2 class="quote">{{formData.quote}}</h2>
+                    <h2 class="brag">{{formData.brag}}</h2>
+                    <h2 class="about-google">{{formData.aboutGoogle}}</h2>
+                    <h2 class="this-is-me">{{formData.thisIsMe}}</h2>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+
+    
+
+</body>
+</html>
+
+

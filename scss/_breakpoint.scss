@@ -1,0 +1,112 @@
+//////////////////////////////
+// Default Variables
+//////////////////////////////
+// Default Features
+$breakpoint-default-media:      all !default;
+$breakpoint-default-feature:    min-width !default;
+$breakpoint-default-pair:       width !default;
+
+// Default Transforms
+$breakpoint-force-media-all:    false !default;
+$breakpoint-to-ems:             false !default;
+$breakpoint-resolutions:        true !default;
+
+// Default No Query Options
+$breakpoint-no-queries:         false !default;
+$breakpoint-no-query-wrappers:  false !default;
+
+// Deftault Base Font Size
+$breakpoint-base-font-size:     16px !default;
+
+// Legacy Syntax Support
+$breakpoint-legacy-syntax:      true !default;
+
+//////////////////////////////
+// Imports
+//////////////////////////////
+@import 'breakpoint/context';
+@import 'breakpoint/helpers';
+@import 'breakpoint/parsers';
+@import 'breakpoint/no-query';
+
+@import 'breakpoint/respond-to';
+
+//////////////////////////////
+// Breakpoint Mixin
+//////////////////////////////
+
+@mixin breakpoint($query) {
+  // Internal Variables
+  $query-string: '';
+
+  // Reset contexts
+  @include private-breakpoint-reset-contexts();
+
+  // Test to see if it's a comma-separated list
+  $or-list: is-breakpoint-list($query);
+  $query-fallback: false;
+
+
+  @if ($or-list != false and $breakpoint-legacy-syntax == false) {
+    $length: length($query);
+
+    $last: nth($query, $length);
+    $query-fallback: breakpoint-no-query($last);
+
+    @if ($query-fallback != false) {
+      $length: $length - 1;
+    }
+
+    $private-breakpoint-context-placeholder: 0;
+    @for $i from 1 through $length {
+      $private-breakpoint-context-placeholder: $private-breakpoint-context-placeholder + 1;
+      @if $i == 1 {
+        $query-string: breakpoint-parse(nth($query, $i));
+      }
+      @else {
+        $query-string: $query-string + ', ' + breakpoint-parse(nth($query, $i));
+      }
+    }
+  }
+  @else {
+    @if ($breakpoint-legacy-syntax == true) {
+      $length: length($query);
+
+      $last: nth($query, $length);
+      $query-fallback: breakpoint-no-query($last);
+
+      @if ($query-fallback != false) {
+        $length: $length - 1;
+      }
+
+      $mq: ();
+
+      @for $i from 1 through $length {
+        $mq: append($mq, nth($query, $i), comma);
+      }
+
+      $query-string: breakpoint-parse($mq);
+    }
+    @else {
+      $query-string: breakpoint-parse($query);
+    }
+  }
+
+
+  // Print Out Query String
+
+  @if not $breakpoint-no-queries {
+    @media #{$query-string} {
+      @content;
+    }
+  }
+
+  @if $breakpoint-no-query-wrappers {
+    @if $query-fallback != false {
+      #{$query-fallback} & {
+        @content;
+      }
+    }
+  }
+
+}

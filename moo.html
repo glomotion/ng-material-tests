@@ -1,0 +1,51 @@
+<html>
+<head>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+  
+  google.load("visualization", '1', {packages:['corechart']});
+  
+  google.setOnLoadCallback(drawChart);
+  
+  function drawChart() {
+    
+    var query = new google.visualization.Query(
+    
+      //  'https://docs.google.com/spreadsheet/ccc?key=0Atw2BTU52lOCdEZpUlVIdmxGOWZBR2tuLXhYN2dQTWc&usp=drive_web&gid=0#');
+      //  'https://docs.google.com/spreadsheet/ccc?key=0AhZb7SQfcem_dEVfQTZoUjBMTmo4Slllc05SNzhWM1E&usp=sharing');
+       // 'https://docs.google.com/a/google.com/spreadsheet/ccc?key=0Aq8rwzrxuZqMdHpRNm1iOU1MQk5TdDZIa2tyRW1EZ3c&usp=sharing');
+       // 'https://docs.google.com/a/google.com/spreadsheets/d/1OFx6sMaGWh93MhEqyn7zQ03ADcNNpWf0RfzC4sm_Kz4');
+        // 'https://docs.google.com/a/google.com/spreadsheets/d/1OFx6sMaGWh93MhEqyn7zQ03ADcNNpWf0RfzC4sm_Kz4/gviz/tq?sheet=moo');
+      'https://docs.google.com/a/google.com/spreadsheets/d/1OFx6sMaGWh93MhEqyn7zQ03ADcNNpWf0RfzC4sm_Kz4/gviz/tq');
+      //  'https://docs.google.com/a/google.com/spreadsheets/d/13pHC2AKgtwLUHolEnHFoJw9hmTqHi_2OZ7KsS7GPmuo/edit?usp=sharing');
+    
+    query.send(handleQueryResponse);
+  
+  }
+
+  function handleQueryResponse(response) {
+  
+    if (response.isError()) {
+  
+      alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+  
+      return;
+  
+    }
+
+    console.log(response);
+
+    var data = response.getDataTable();
+    var chart = new google.visualization.ColumnChart(document.getElementById('columnchart'));
+    chart.draw(data);
+  }
+</script>
+
+<title>Data from a Spreadsheet</title>
+</head>
+
+<body>
+  <div id='columnchart'></div>
+</body>
+</html>

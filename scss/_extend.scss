@@ -1,0 +1,54 @@
+/* Mixins to extend what Compass provides 
+
+@mixin animation($values...) {
+  -webkit-animation: $values;
+  -moz-animation: $values;
+  -o-animation: $values;
+  -ms-animation: $values;
+  animation: $values;
+}
+*/
+
+/*@mixin keyframes($name) {
+ 
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}*/
+
+@mixin text-fill-color($value) {
+  -webkit-text-fill-color: $value;
+  -moz-text-fill-color: $value;
+  -o-text-fill-color: $value;
+  -ms-text-fill-color: $value;
+  text-fill-color: $value;
+}
+
+@mixin text-stroke-color($value) {
+  -webkit-stroke-fill-color: $value;
+  -moz-stroke-fill-color: $value;
+  -o-stroke-fill-color: $value;
+  -ms-stroke-fill-color: $value;
+  stroke-fill-color: $value;
+}
+
+@mixin text-stroke-width($value) {
+  -webkit-text-stroke-width: $value;
+  -moz-text-stroke-width: $value;
+  -o-text-stroke-width: $value;
+  -ms-text-stroke-width: $value;
+  text-stroke-width: $value;
+}
+

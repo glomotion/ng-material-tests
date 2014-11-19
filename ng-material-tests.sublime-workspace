@@ -1,0 +1,978 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fail",
+				"startupFailure"
+			],
+			[
+				"goog",
+				"google-blue"
+			],
+			[
+				"curr",
+				"currentCard"
+			],
+			[
+				"carouse",
+				"carouselUpdating"
+			],
+			[
+				"new",
+				"new_pane"
+			],
+			[
+				"noti",
+				"notifyMode"
+			],
+			[
+				"off",
+				"off-black"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"user",
+				"userCards"
+			],
+			[
+				"card",
+				"cardId"
+			],
+			[
+				"Un",
+				"UNOWNED_LEVEL"
+			],
+			[
+				"deta",
+				"detailCards"
+			],
+			[
+				"height",
+				"signin-btn-height"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"splash",
+				"splash-horiz-gutter"
+			],
+			[
+				"$sta",
+				"$stateProvider"
+			],
+			[
+				"ease",
+				"ease-in-out"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"liht",
+				"light-off-black"
+			],
+			[
+				"webkit-user",
+				"webkit-user-select"
+			],
+			[
+				"pointer",
+				"pointer-events"
+			],
+			[
+				"color",
+				"color-change-timing"
+			],
+			[
+				"mint",
+				"mint-color"
+			],
+			[
+				"acu",
+				"actualCard"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"google",
+				"google-red"
+			],
+			[
+				"teal",
+				"ballet-teal"
+			],
+			[
+				"dark",
+				"dark-off-white"
+			],
+			[
+				"corner",
+				"corner-size"
+			],
+			[
+				"nex",
+				"nextCard"
+			],
+			[
+				"cards",
+				"cardsRecieved"
+			],
+			[
+				"quan",
+				"quantum-fab-btn-color"
+			],
+			[
+				"app-",
+				"app-header"
+			],
+			[
+				"ng-",
+				"ng-leave"
+			],
+			[
+				"translate",
+				"translateAmount"
+			],
+			[
+				"all",
+				"allCollections"
+			],
+			[
+				"spa",
+				"space-factor"
+			],
+			[
+				"fact",
+				"space-factor"
+			],
+			[
+				"font",
+				"font-factor"
+			],
+			[
+				"eas",
+				"ease-in-out"
+			],
+			[
+				"opa",
+				"opacityAmount"
+			],
+			[
+				"opacity",
+				"opacitySteps"
+			],
+			[
+				"break",
+				"BREAKPOINT"
+			],
+			[
+				"sta",
+				"stayInPlace"
+			],
+			[
+				"trn",
+				"translateAmount"
+			],
+			[
+				"pull",
+				"pullCloseHandler"
+			],
+			[
+				"puller",
+				"pullerMode"
+			],
+			[
+				"$cont",
+				"$container"
+			],
+			[
+				"app",
+				"app-header-height"
+			],
+			[
+				"lazy",
+				"lazyImages"
+			],
+			[
+				"laz",
+				"lazyImages"
+			],
+			[
+				"image",
+				"imageUrl"
+			],
+			[
+				"pullDo",
+				"pullDownListener"
+			],
+			[
+				"web",
+				"webkit-transform"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"contain",
+				"containerWidth"
+			],
+			[
+				"overflow",
+				"overflow-x"
+			],
+			[
+				"screen",
+				"screen-container"
+			],
+			[
+				"perc",
+				"percentComplete"
+			],
+			[
+				"transla",
+				"translateAmount"
+			],
+			[
+				"reset",
+				"resetModes"
+			],
+			[
+				"read",
+				"readWrite"
+			],
+			[
+				"ali",
+				"alice-in-wondercons"
+			],
+			[
+				"option",
+				"optionalMessage"
+			],
+			[
+				"status",
+				"statusWidth"
+			],
+			[
+				"dial",
+				"dialogue-bg"
+			],
+			[
+				"dia",
+				"dialogue-bg"
+			],
+			[
+				"lo",
+				"lowercase"
+			],
+			[
+				"old",
+				"oldWidth"
+			],
+			[
+				"mid",
+				"mid-grey"
+			],
+			[
+				"gr",
+				"greyscale-none"
+			],
+			[
+				"googl",
+				"google-yellow"
+			],
+			[
+				"sele",
+				"selectedFile"
+			],
+			[
+				"win",
+				"window-title-bar-height"
+			],
+			[
+				"file-",
+				"file-details-panel-width"
+			],
+			[
+				"last",
+				"last-of-type"
+			],
+			[
+				"sys",
+				"syssettings"
+			],
+			[
+				"ac",
+				"activeIndex"
+			],
+			[
+				"alt",
+				"altTabsArr"
+			],
+			[
+				"this",
+				"thisClass"
+			],
+			[
+				"al",
+				"alt-tab-btn-width"
+			],
+			[
+				"out",
+				"outputMode"
+			],
+			[
+				"appun",
+				"appunlock"
+			],
+			[
+				"gree",
+				"dark-green"
+			],
+			[
+				"back",
+				"backColor"
+			],
+			[
+				"sl",
+				"slight-vert-offset"
+			],
+			[
+				"boot",
+				"boot-logo-size"
+			],
+			[
+				"boo",
+				"boot-logo-size"
+			],
+			[
+				"rotate",
+				"rotateplane"
+			],
+			[
+				"level",
+				"level-eq-block-size"
+			],
+			[
+				"add",
+				"addClass	addClass"
+			],
+			[
+				"click",
+				"clickedTarget"
+			],
+			[
+				"setting",
+				"settings-bg"
+			],
+			[
+				"current",
+				"currentSlide"
+			],
+			[
+				"curre",
+				"currentSlide"
+			],
+			[
+				"light",
+				"light-off-black"
+			],
+			[
+				"apps",
+				"apps-menu-btn"
+			],
+			[
+				"off-",
+				"light-off-black"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"do",
+				"app-dock-height"
+			],
+			[
+				"has",
+				"hasClass	.hasClass"
+			],
+			[
+				"vertic",
+				"vertical-align"
+			],
+			[
+				"GOOGLE",
+				"google-blue"
+			],
+			[
+				"goo",
+				"google-green"
+			],
+			[
+				"unde",
+				"undefined"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"overflow-",
+				"overflow-y"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"comma",
+				"command-entry"
+			],
+			[
+				"data",
+				"data-display-height"
+			],
+			[
+				"terminal",
+				"terminal-wrapper"
+			],
+			[
+				"comm",
+				"commandLogLines"
+			],
+			[
+				"run",
+				"runModeSwitchToggle"
+			],
+			[
+				"fish",
+				"fishfoodBanner"
+			],
+			[
+				"scro",
+				"scrollY"
+			],
+			[
+				"main",
+				"main-content"
+			],
+			[
+				"sa",
+				"sans-serif"
+			],
+			[
+				"minima",
+				"minimalMode"
+			],
+			[
+				"act",
+				"active-script"
+			],
+			[
+				"nth",
+				"nth-of-type"
+			],
+			[
+				"min",
+				"minimised-mode"
+			],
+			[
+				"fancy",
+				"fancyInput"
+			],
+			[
+				"mini",
+				"minimised-terminal-height"
+			],
+			[
+				"command",
+				"commandVal"
+			],
+			[
+				"na",
+				"dark-navy"
+			],
+			[
+				"comman",
+				"command-prompt-height"
+			],
+			[
+				"begin",
+				"begin-btn-dia"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html ng-app=\"cards-app\" ng-controller=\"AppController\">\n<!--\n           COLLECT\n                          ,,\n                         ';;\n                          ''\n            ____          ||\n           ;    \\         ||\n            \\,---'-,-,    ||\n            /     (  o)   ||\n          (o )__,--'-' \\  ||\n,,,,       ;'uuuuu''   ) ;;\n\\   \\      \\ )      ) /\\//\n '--'       \\'nnnnn' /  \\\n   \\\\      //'------'    \\\n    \\\\    //  \\           \\\n     \\\\  //    )           )\n      \\\\//     |           |\n       \\\\     /            |\n\n\n      ALL THE (CARD) THINGS!\n-->\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Vegas Web Form</title>\n\n    <link href=\"//fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,400italic\" rel=\"stylesheet\" type=\"text/css\">\n    <link href=\"angular-material.min.css\" rel=\"stylesheet\">\n    <link href=\"app.css\" rel=\"stylesheet\">\n    \n    <script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js\"></script>\n    <script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-animate.js\"></script>\n    <script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-touch.js\"></script>\n    <script src=\"//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-aria.min.js\"></script>\n    <script src=\"hammer.min.js\"></script>\n    <script src=\"angular-material.min.js\"></script>\n\n    <!-- \n\n        app's js \n        \n        <script src=\"/static/js/directives.js\"></script>\n        <script src=\"/static/js/services.js\"></script>\n        <script src=\"/static/js/controllers.js\"></script>\n\n    -->\n\n    <script>\n        angular.module('cards-app', ['ngTouch', 'ngAnimate', 'ngMaterial'])\n        .controller('AppController', function($scope, $timeout) { \n            \n            $scope.formData = {};\n            $scope.formData.consent = false;\n            $scope.flipped = false;\n\n            // TEMP code, mucho hackio\n                var loaded = false;\n                $timeout(function(){\n                    loaded = true;\n                },10);\n\n\n            var fullnameInput = document.getElementById(\"fullname\");\n            // update the input control when we update the scope object\n            $scope.formData.fullname = fullnameInput.value = \"Pulled from g+ api\";\n\n            $scope.$watchCollection('formData', function(){\n                updateData();\n            });\n\n            function updateData() {\n\n                $scope.formData.shortname = $scope.formData.fullname.split(' ')[0];\n                $scope.formData.ldap = $scope.formData.shortname.toLowerCase() + '@google.com';\n\n                if (!$scope.formData.consent) {\n                    $scope.cantSave = true;\n                } else {\n                    $scope.cantSave = false;\n                }\n            }\n\n            $scope.$watch('formData.fullname', function(){\n                toggleFlipped('reverse');\n            }, true);\n            $scope.$watch('formData.cardImage', function(){\n                toggleFlipped('reverse');\n            }, true);\n            $scope.$watch('formData.quote', function(){\n                toggleFlipped();\n            }, true);\n            $scope.$watch('formData.brag', function(){\n                toggleFlipped();\n            }, true);\n            $scope.$watch('formData.aboutGoogle', function(){\n                toggleFlipped();\n            }, true);\n            $scope.$watch('formData.thisIsMe', function(){\n                toggleFlipped();\n            }, true);\n\n            function toggleFlipped(reverse) {\n                if (reverse) {\n                    if ($scope.flipped) {\n                        $scope.flipped = false;\n                        console.log('flipping to frontside')\n                    }\n                } else {\n                    if(!$scope.flipped && loaded) {\n                        $scope.flipped = true;\n                        console.log('flipping to backside');\n                    }\n                }\n            }\n\n            \n\n        });\n    </script>\n\n    <!-- \n\n        NOTE:\n        To use Angular's template tags inside of AppEngine, the open and close tags are changed to:\n        {[{ object }]} \n\n    -->\n\n</head>\n\n<body class=\"\" ng-class=\"\">\n    \n   \n\n    \n\n    \n\n</body>\n</html>\n\n\n\n\n\n\n\n\n",
+			"file": "/Users/timpaul/Desktop/GIT-Repos/angular-materials-tests/tabs.html",
+			"file_size": 4431,
+			"file_write_time": 1415928209000000,
+			"settings":
+			{
+				"buffer_size": 4431,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 374.0,
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 498.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/timpaul/Library/Application Support/Sublime Text 2/Packages/View In Browser/View In Browser.sublime-settings",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/static/templates/cards.html",
+		"/Users/timpaul/Desktop/GIT-Repos/apac-mobile-first/static/js/hammer-carousel.2.0.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/app.yaml",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/static/templates/entry.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/static/templates/user-cards.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/static/templates/card.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/main.py",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/scss/app.scss",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/js/services.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/js/directives.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/js/app.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/templates/card.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/templates/user-cards.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/templates/cards.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/templates/app.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/index.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/todo.txt",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/js/controllers.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/js/hammer-puller.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/platforms/android/AndroidManifest.xml",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/config.xml",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/README.md",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/scss/ionic.app.scss",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/scss/styles.scss",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/platforms/android/platform_www/cordova.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/templates/about-collection.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/templates/about-app.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/js/hammer-carousel.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/css/styles.css",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/js/hammer-pullopen.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/templates/entry.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/lib/ionic/scss/_animations.scss",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/js/jquery.stacker.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/scss/_keyframes.scss",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/scss/_animation.scss",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/.gitignore",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/js/hammer-pullclose.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/lib/ionic/js/ionic.bundle.js",
+		"/Users/timpaul/Desktop/potato-important-services.txt",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/lib/ionic/css/ionic.css",
+		"/Users/timpaul/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/js/hammer-pulldown.js",
+		"/Users/timpaul/Desktop/GIT-Repos/video-cube-tablet/html5-cube/cube.js",
+		"/Users/timpaul/Desktop/GIT-Repos/video-cube-tablet/html5-cube/index.html",
+		"/Users/timpaul/Desktop/GIT-Repos/video-cube-tablet/html5-cube/Cube.MediaController.js",
+		"/Users/timpaul/Desktop/GIT-Repos/ionic-cards/www/templates/app.html",
+		"/Users/timpaul/Desktop/GIT-Repos/ionic-cards/www/js/controllers.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/js/jquery.stacker.js",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/www/templates/menu.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/ballet-cards.sublime-project",
+		"/Users/timpaul/Desktop/GIT-Repos/test-ionic/www/templates/card.html",
+		"/Users/timpaul/Desktop/GIT-Repos/test-ionic/www/templates/menu.html",
+		"/Users/timpaul/Desktop/GIT-Repos/cl-ballet-cards-app-ui/css/app.css",
+		"/Users/timpaul/Desktop/GIT-Repos/rh-prototype/core/static/scss/app.scss",
+		"/Users/timpaul/Desktop/GIT-Repos/baseball-cards/www/js/Baseball.UI.js",
+		"/Users/timpaul/Desktop/GIT-Repos/baseball-cards/www/index.html",
+		"/Users/timpaul/Desktop/GIT-Repos/baseball-cards/README.md",
+		"/Users/timpaul/Desktop/GIT Repos/pull-refresh-demo/app.js",
+		"/Users/timpaul/Desktop/GIT Repos/pull-refresh-demo/app.min.js",
+		"/Users/timpaul/Desktop/GIT Repos/pull-refresh-demo/pull-down.css",
+		"/Users/timpaul/Desktop/GIT Repos/pull-refresh-demo/pull-up.js",
+		"/Users/timpaul/Desktop/GIT Repos/pull-refresh-demo/pull-up.scss",
+		"/Users/timpaul/Desktop/GIT Repos/pull-refresh-demo/pull-up.html",
+		"/Users/timpaul/Desktop/pulltorefresh-master/default.html",
+		"/Users/timpaul/Desktop/pull-to-refresh-master/index.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/svg/desaturate.svg",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/scss/app.scss",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_filepicker.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/apps/confirm.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/apps/filepicker.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/os.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/base.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/apps/syssettings.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_syssettings.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/main.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/apps/alert.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/window.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_confirm.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/apps/terminal.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_alert.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/apps/ace.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/apps/editor.js",
+		"/Users/timpaul/Desktop/GIT Repos/angular-template-repo/index.html",
+		"/Users/timpaul/Desktop/GIT Repos/angular-template-repo/static/js/angular.js",
+		"/Users/timpaul/Desktop/GIT Repos/angular-template-repo/app.yaml",
+		"/Users/timpaul/Desktop/GIT Repos/angular-template-repo/static/js/angular.min.js",
+		"/Users/timpaul/Desktop/GIT Repos/angular-template-repo/static/js/controllers.js",
+		"/Users/timpaul/Desktop/photo-sphere-viewer/photo-sphere-viewer.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/_apps.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/readme.md",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/scss/signin.scss",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/gateway/google_signin.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/gateway/search.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_files/readme__dot__txt.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/messages/_boot_message.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/gateway/console.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/gateway/console-new.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/gateway/console.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/scss/gateway_console-new.scss",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/scss/gateway_console.scss",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/jquery.simpleTerminal.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/gateway/console_new.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_terminal.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/gateway/console_old.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/gateway/base_gateway.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/urls.py",
+		"/Users/timpaul/Desktop/GIT Repos/cl-speakeasy/cl-speakeasy.sublime-project",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/app.yaml",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_messenger.html",
+		"/Users/timpaul/Desktop/GIT Repos/wwf-earth-hour/assets/css/style.css",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/views.py",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/challenge.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_coderun.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_mplayer.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_ace.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/apps/coderun.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_file_picker.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/jquery.float-thead.min.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/apps/mplayer.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/app.js",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_system_settings.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_unlock.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/templates/os_apps/_editor.html",
+		"/Users/timpaul/Desktop/moo.html",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/urls.py",
+		"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os/apps/appunlock.js",
+		"/Users/timpaul/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open folders>",
+			"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/",
+			"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os",
+			"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js",
+			"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js/os",
+			"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js",
+			"/Users/timpaul/Desktop/GIT Repos/rh-prototype/static/js",
+			"/Users/timpaul/Desktop/GIT Repos/rh-prototype/",
+			"/Users/timpaul/Desktop/GIT Repos/rh-prototype/core/static/js",
+			"/Users/timpaul/Desktop/GIT Repos/rabbithole-dogfood"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bs/angularjs/1.3",
+			"0-rc.2",
+			"thumb",
+			"scroll",
+			"flip",
+			"carousel",
+			"car",
+			"startupF",
+			"startupFailure",
+			"ApiService",
+			"img/",
+			"js/",
+			"pullClose",
+			"quant",
+			"quantum",
+			"transla",
+			"$state",
+			"state",
+			"throttle",
+			"rootUrl()",
+			"api",
+			"stopListening",
+			"card_upd",
+			"\"auto_new_card\"",
+			"pullDown",
+			"pull",
+			"null",
+			"\"full",
+			"auto_new_card",
+			".cancel",
+			".active",
+			"opa",
+			"share-mode-btn",
+			".app-header",
+			"app-header",
+			"article",
+			"console",
+			"console.log(",
+			"console.l",
+			"console.log",
+			"card-s",
+			"animate",
+			"transla",
+			"$scope.carouselControl.totalSlides",
+			"totalSlides",
+			"card_updated",
+			"carousel init",
+			"#user-layer-area",
+			"$state",
+			"pull-down",
+			"puller",
+			"sounds",
+			"locked",
+			".locked",
+			"{\n",
+			".locked",
+			"#app-collections",
+			"pop",
+			".app-header {",
+			"scroll",
+			"group",
+			"notify-info",
+			"pull-down-",
+			"pull-up",
+			"action-ill",
+			".drag-area-title",
+			"flex",
+			"notify-inf",
+			"notify-",
+			"puller-mode",
+			"$state",
+			"state",
+			"slideCallback",
+			"cards",
+			"console",
+			"cardMiss",
+			"\"OH SNAP!\" !important",
+			".notification.alert",
+			"uiService.alert",
+			".alert",
+			"BumpService.listen",
+			"$loop",
+			"puller-mo",
+			"puller",
+			".view-container",
+			"puller",
+			"$http",
+			"emit",
+			"BumpService",
+			".listen",
+			".tabs",
+			"#app-collections",
+			".drag-func",
+			"pullReset",
+			"$appl",
+			"UNOWNED_LEVEL",
+			"limited",
+			".drag-fun",
+			"article",
+			"300ms",
+			"this",
+			"history",
+			"drag-",
+			"drag-functionality-area",
+			"console",
+			"isBrowser",
+			"updateLevelMeta",
+			"updateLevelMeta(",
+			"userOwnedCards",
+			"detailMode",
+			"article {",
+			"view-con",
+			"LEFT",
+			"RIGHT",
+			"pageAnim",
+			".slide-left-right-ios7",
+			"ng-leave",
+			"isBr",
+			"bump",
+			"window.isBrowser()",
+			"flex",
+			"23",
+			"splash",
+			"app-header",
+			"300ms",
+			"500ms",
+			"350ms",
+			"$google-red"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/timpaul/Desktop/GIT-Repos/angular-materials-tests/tabs.html",
+					"settings":
+					{
+						"buffer_size": 4431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2956,
+								2956
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 664.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 207.0,
+	"status_bar_visible": true
+}
